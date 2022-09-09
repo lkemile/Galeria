@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Galeria</string>
+    <string name="share_photo">Compartilhar Foto</string>
+    <string name="take_photo">Tirar Foto</string>
 </resources>

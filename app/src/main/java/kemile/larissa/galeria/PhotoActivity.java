@@ -4,6 +4,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 public class PhotoActivity extends AppCompatActivity {
 
@@ -17,4 +19,13 @@ public class PhotoActivity extends AppCompatActivity {
             //habilita o botão de voltar na ActionBar
             actionBar.setDisplayHomeAsUpEnabled(true);
     }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //cria um inflador de menu  que ger as opções de menu definidas as adiciona no menu da Activity.
+        super.onCreateOptionsMenu(menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_tb, menu);
+        return true;
+    }
+
 }
